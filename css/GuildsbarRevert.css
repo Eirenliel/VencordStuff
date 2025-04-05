@@ -38,7 +38,6 @@
     }
 
     [class*="selected__"] {
-
         [class*="childWrapper__"],
         [class*="childWrapper__"] img,
         [class*="icon_"],
@@ -96,10 +95,17 @@
         }
     }
 
+    .stack_dbd263 {
+        gap: 0 !Important;
+    }
 
+    [class*="listItem__"] {
+        margin-bottom: 8px;
+    }
 
     div:not([class]):has([class*="listItem__"]) {
         height: var(--guildbar-avatar-size) !important;
+        margin-top: 8px 0 8px;
     }
 
     [class*="isExpanded__"] {
