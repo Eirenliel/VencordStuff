@@ -1,3 +1,11 @@
+:root {
+    --guildbar-avatar-size: 48px;
+    --blob-scale: 48;
+
+    --guildbar-folder-size: var(--guildbar-avatar-size);
+    --folder-blob-scale: var(--blob-scale);
+}
+
 .visual-refresh nav[class*="guilds_"] {
     /* Uncomment if you changed up your nameplate */
     /* margin: 0;
