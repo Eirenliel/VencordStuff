@@ -113,7 +113,7 @@
 
     div:not([class]):has([class*="listItem__"]) {
         height: var(--guildbar-avatar-size) !important;
-        margin-top: 8px 0 8px;
+        margin: 8px 0 8px;
     }
 
     [class*="isExpanded__"] {
