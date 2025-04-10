@@ -4,6 +4,8 @@
 
     --guildbar-folder-size: var(--guildbar-avatar-size);
     --folder-blob-scale: var(--blob-scale);
+
+    --custom-guild-list-padding: calc((72px - var(--guildbar-avatar-size)) / 2);
 }
 
 .visual-refresh nav[class*="guilds_"] {
@@ -103,12 +105,16 @@
         }
     }
 
-    .stack_dbd263 {
-        gap: 0 !Important;
+    [class*="closedFolderIconWrapper__"] {
+        gap: initial;
     }
 
     [class*="listItem__"] {
         margin-bottom: 8px;
+    }
+
+    [class*="stack_"] {
+        gap: 0 !important;
     }
 
     div:not([class]):has([class*="listItem__"]) {
@@ -134,9 +140,14 @@
             transition: background-color var(--custom-folder-item-animation-duration) ease-out; /* 150ms */
         }
 
-        & [class*="stack_"] {
+        [class*="stack_"] {
             height: auto !important;
+            :last-child {
+                margin-bottom: 0;
+            }
         }
+
+        margin-bottom: 8px;
     }
 
     [id^="folder-items-"] {
