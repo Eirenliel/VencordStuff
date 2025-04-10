@@ -41,8 +41,8 @@
     [class*="childWrapper__"] img,
     [class*="icon_"],
     [class*="circleIconButton__"] {
-        border-radius: 100% !important;
-        transition: border-radius 150ms;
+        border-radius: 50% !important;
+        transition: border-radius 150ms linear;
     }
 
     [class*="selected__"] {
@@ -50,7 +50,7 @@
         [class*="childWrapper__"] img,
         [class*="icon_"],
         &[class*="circleIconButton__"] {
-            border-radius: 0 !important;
+            border-radius: 27% !important;
         }
     }
 
