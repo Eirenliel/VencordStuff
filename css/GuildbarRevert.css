@@ -8,10 +8,13 @@
     --custom-guild-list-padding: calc((72px - var(--guildbar-avatar-size)) / 2);
 }
 
+.visual-refresh [class*="sidebarList_"] {
+    margin-left: var(--custom-guild-list-width);
+}
 .visual-refresh nav[class*="guilds_"] {
     /* Uncomment if you changed up your nameplate */
     /* margin: 0;
-    [class*="sidebar_"]:has(&)::after {
+    [class*="sidebar_"]::after {
         height: 0;
     } */
 
@@ -36,6 +39,16 @@
 
         [class*="acronym_"] {
             line-height: calc(var(--guildbar-folder-size) / 3);
+        }
+
+        &[style*="font-size: 12px;"] {
+            font-size: 10px !important;
+        }
+        &[style*="font-size: 10px;"] {
+            font-size: 7px !important;
+        }
+        &[style*="font-size: 8px;"] {
+            font-size: 6px !important;
         }
     }
 
