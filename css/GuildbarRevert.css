@@ -8,9 +8,6 @@
     --custom-guild-list-padding: calc((72px - var(--guildbar-avatar-size)) / 2);
 }
 
-.visual-refresh [class*="sidebarList_"] {
-    margin-left: var(--custom-guild-list-width);
-}
 .visual-refresh nav[class*="guilds_"] {
     /* Uncomment if you changed up your nameplate */
     /* margin: 0;
