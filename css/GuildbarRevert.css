@@ -5,7 +5,11 @@
     --guildbar-folder-size: var(--guildbar-avatar-size);
     --folder-blob-scale: var(--blob-scale);
 
-    --custom-guild-list-padding: calc((72px - var(--guildbar-avatar-size)) / 2);
+    --custom-guild-list-padding: 12px;
+    --custom-guild-list-width: calc(
+        max(var(--guildbar-avatar-size), var(--guildbar-folder-size))
+        + var(--custom-guild-list-padding) * 2
+    );
 }
 
 .visual-refresh nav[class*="guilds_"] {
