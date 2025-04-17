@@ -12,7 +12,7 @@
     );
 }
 
-.visual-refresh nav[class*="guilds_"] {
+nav[class*="guilds_"] {
     /* Uncomment if you changed up your nameplate */
     /* margin: 0;
     [class*="sidebar_"]::after {
