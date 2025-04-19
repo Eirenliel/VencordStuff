@@ -1,4 +1,10 @@
+@import url("https://ukriu.github.io/cssCord/Other/noDistractions.css");
+
 :root {
+    --image-filters: grayscale(1) contrast(9000);
+}
+
+* {
     --custom-app-top-bar-height: 0px;
     --chat-background-default: white !important;
     --background-surface-high: white !important;
@@ -7,6 +13,7 @@
     --modal-background: white !important;
     --background-base-low: white !important;
     --background-base-lower: white !important;
+    --background-base-lowest: white !important;
     --background-primary: white !important;
     --background-secondary: white !important;
     --background-tertiary: white !important;
@@ -58,7 +65,9 @@ code * {
 [class*="typingDots_"],
 [class*="topBar__"],
 [class*="base_"] > [class*="bar_"],
-[class*="content_"] > [class*="container_"] {
+[class*="content_"] > [class*="container_"],
+[class*="content_"] > [style*="--profile"],
+[aria-label="Edit Profile"] {
     display: none !important;
 }
 
@@ -77,11 +86,15 @@ code * {
     }
 }
 
-img, [class*="emoji"] {
-    filter: grayscale(1) contrast(9000);
+img, [class*="emoji"], [class*="icon_"], [class*="banner__"] {
+    filter: var(--image-filters);
     &:hover, [class*="imageWrapper_"] {
         filter: none;
     }
+}
+
+[class*=iconWrapper__] {
+    background-color: white;
 }
 
 [class*="spriteColored__"] {
@@ -106,4 +119,8 @@ img, [class*="emoji"] {
         filter: grayscale(1);
         color: white !important;
     }
+}
+
+[style*="--profile"] * {
+    background-color: white !Important;
 }
