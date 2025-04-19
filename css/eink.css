@@ -7,8 +7,9 @@
     --modal-background: white !important;
     --background-base-low: white !important;
     --background-base-lower: white !important;
+    --background-primary: white !important;
     --background-secondary: white !important;
-    --background-tertiary: transparent !important;
+    --background-tertiary: white !important;
     --input-background: transparent !important;
     --info-warning-foreground: black !important;
     --button-filled-brand-background: black !important;
