@@ -75,7 +75,7 @@ code * {
     }
 }
 
-img {
+img, [class*="emoji"] {
     filter: grayscale(1) contrast(9000);
     &:hover, [class*="imageWrapper_"] {
         filter: none;
