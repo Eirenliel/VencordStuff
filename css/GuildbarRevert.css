@@ -133,7 +133,7 @@ nav[class*="guilds_"] {
 
     div:not([class]):has([class*="listItem__"]) {
         height: var(--guildbar-avatar-size) !important;
-        margin: 8px 0 8px;
+        margin-bottom: 8px;
     }
 
     [class*="isExpanded__"] {
