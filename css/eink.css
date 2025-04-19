@@ -1,0 +1,97 @@
+:root {
+    --custom-app-top-bar-height: 0px;
+    --chat-background-default: white !important;
+    --background-surface-high: white !important;
+    --background-surface-higher: white !important;
+    --background-surface-highest: white !important;
+    --modal-background: white !important;
+    --background-base-lower: white !important;
+    --background-secondary: white !important;
+    --background-tertiary: transparent !important;
+    --input-background: transparent !important;
+    --info-warning-foreground: black !important;
+    --button-filled-brand-background: black !important;
+}
+
+* {
+    color: black !important;
+    caret-color: black;
+    border: none !important;
+    border-radius: 0px !important;
+    box-shadow: none !important;
+}
+
+[style*="background-color"] {
+    background-color: transparent !important;
+}
+
+[class*="key_"], code {
+    background-color: black !important;
+    color: white !important;
+    fill: white !important;
+    padding: 6px;
+}
+
+code * {
+    color: white !important;
+}
+
+[class*="colorBrand__"][class*="button__"] {
+    color: white;
+}
+
+[class*="message__"] {
+    background-color: transparent !important;
+    &::before {
+        background-color: black;
+        width: 5px;
+    }
+    &[class*="replying__"]::before {
+        width: 10px;
+    }
+}
+
+[class*="sidebar_"],
+[class*="subtitleContainer_"],
+[class*="typingDots_"],
+[class*="topBar__"],
+[class*="base_"] > [class*="bar_"],
+[class*="content_"] > [class*="container_"] {
+    display: none !important;
+}
+
+[class*="formWithLoadedChatInput_"] {
+    padding: 0 !important;
+}
+[class*="channelTextArea_"] {
+    margin: 0;
+}
+[class*="newMessagesBar__"] {
+    left: 0 !important;
+    right: 0 !important;
+    background-color: black;
+    * {
+        color: white !important;    
+    }
+}
+
+img {
+    filter: grayscale(1) contrast(9000);
+    &:hover, [class*="imageWrapper_"] {
+        filter: none;
+    }
+}
+
+[class*="spriteColored__"] {
+    opacity: 0 !important;
+}
+[class*="spriteGreyscale__"] {
+    opacity: 1 !important;
+    background-color: black;
+    --custom-emoji-sprite-bg-position: 0px 0px !important;
+}
+
+[class*="badge__"] {
+    background-color: black;
+    color: white !important;
+}
