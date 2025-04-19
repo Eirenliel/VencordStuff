@@ -97,3 +97,13 @@ img, [class*="emoji"] {
     background-color: black;
     color: white !important;
 }
+
+[class*="autocomplete__"] {
+    left: 0 !important;
+    right: 0 !important;
+    background-color: black;
+    * {
+        filter: grayscale(1);
+        color: white !important;
+    }
+}
