@@ -136,6 +136,10 @@ nav[class*="guilds_"] {
         margin-bottom: 8px;
     }
 
+    [aria-label="Direct Messages"] {
+        margin-top: 0 !important;
+    }
+
     [class*="isExpanded__"] {
         [class*="folder__"] {
             background-color: var(--background-secondary);
