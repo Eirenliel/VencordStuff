@@ -131,13 +131,12 @@ nav[class*="guilds_"] {
         gap: 0 !important;
     }
 
-    div:not([class]):has([class*="listItem__"]) {
-        height: var(--guildbar-avatar-size) !important;
-        margin-bottom: 8px;
-    }
-
     [aria-label="Direct Messages"] {
         margin-top: 0 !important;
+        > div {
+            height: var(--guildbar-avatar-size) !important;
+            margin-bottom: 8px;
+        }
     }
 
     [class*="isExpanded__"] {
