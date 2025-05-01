@@ -73,13 +73,14 @@ nav[class*="guilds_"] {
     mask {
         --badge-offset: calc(var(--guildbar-avatar-size) - 40px);
 
+        &:not([class*="folderHeader__"] mask) {
+            use[href$="-lower_badge_masks"] {
+                translate: var(--badge-offset) var(--badge-offset);
+            }
 
-        use[href$="-lower_badge_masks"] {
-            translate: var(--badge-offset) var(--badge-offset);
-        }
-
-        use[href$="-upper_badge_masks"] {
-            translate: var(--badge-offset);
+            use[href$="-upper_badge_masks"] {
+                translate: var(--badge-offset);
+            }
         }
 
         use[href$="-blob_mask"] {
