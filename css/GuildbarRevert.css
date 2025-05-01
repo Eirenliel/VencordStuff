@@ -27,7 +27,9 @@ nav[class*="guilds_"] {
     defs, 
     [class*="blobContainer_"],
     [class*="wrapper_"],
-    [class*="listItemWrapper__"] {
+    [class*="listItemWrapper__"],
+    svg[class*="placeholderMask__"],
+    svg:not([class*="placeholderMask__"]) > foreignObject {
         width: var(--guildbar-avatar-size) !important;
         height: var(--guildbar-avatar-size) !important;
     }
@@ -54,18 +56,11 @@ nav[class*="guilds_"] {
         }
     }
 
-    svg[class*="placeholderMask__"] {
-        width: var(--guildbar-avatar-size);
-        height: var(--guildbar-avatar-size);
-    }
-
     svg:not([class*="placeholderMask__"]) {
         top: 0px;
         left: 0px;
 
         foreignObject {
-            width: var(--guildbar-avatar-size);
-            height: var(--guildbar-avatar-size);
             transform: translate(-4px, -4px);
         }
     }
