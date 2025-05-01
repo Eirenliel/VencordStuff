@@ -88,7 +88,7 @@ nav[class*="guilds_"] {
         }
     }
 
-    [class*="Badge_"] {
+    [class*="Badge_"]:not([class*="folderHeader__"] [class*="Badge_"]) {
         left: calc(var(--guildbar-avatar-size) - 16px);
         &[class*="lower"] {
             top: calc(var(--guildbar-avatar-size) - 16px);
