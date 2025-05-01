@@ -26,10 +26,10 @@ nav[class*="guilds_"] {
 
     defs, 
     [class*="blobContainer_"],
-    [class*="blobContainer_"] > [class*="wrapper_"],
+    [class*="wrapper_"],
     [class*="listItemWrapper__"] {
-        width: var(--guildbar-avatar-size);
-        height: var(--guildbar-avatar-size);
+        width: var(--guildbar-avatar-size) !important;
+        height: var(--guildbar-avatar-size) !important;
     }
 
     [class*="childWrapper__"]>svg {
@@ -85,13 +85,6 @@ nav[class*="guilds_"] {
 
         use[href$="-blob_mask"] {
             scale: var(--blob-scale);
-        }
-    }
-
-    [class*="Badge_"]:not([class*="folderHeader__"] [class*="Badge_"]) {
-        left: calc(var(--guildbar-avatar-size) - 16px);
-        &[class*="lower"] {
-            top: calc(var(--guildbar-avatar-size) - 16px);
         }
     }
 
