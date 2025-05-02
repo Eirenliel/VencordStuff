@@ -94,8 +94,8 @@ nav[class*="guilds_"] {
         align-items: center;
 
         [class*="folderPreview__"] {
-            width: calc(var(--guildbar-folder-size) / 3 * 2 + var(--custom-folder-preview-gap) * 2);
-            height: calc(var(--guildbar-folder-size) / 3 * 2 + var(--custom-folder-preview-gap) * 2);
+            width: calc(var(--guildbar-folder-size) * (2/3) + var(--custom-folder-preview-gap));
+            height: calc(var(--guildbar-folder-size) * (2/3) + var(--custom-folder-preview-gap));
         }
     }
 
