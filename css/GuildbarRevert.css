@@ -61,7 +61,7 @@ nav[class*="guilds_"] {
         }
     }
 
-    svg:not([class*="placeholderMask__"]) {
+    svg:not([class*="placeholderMask__"]):not([class*="folderHeader__"] svg) {
         top: 0px;
         left: 0px;
 
