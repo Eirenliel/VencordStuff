@@ -165,6 +165,10 @@ nav[class*="guilds_"] {
             }
         }
 
+        > [class*="listItem__"] {
+            margin-bottom: 0;
+        }
+
         margin-bottom: 8px;
     }
 
