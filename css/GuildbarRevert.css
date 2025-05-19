@@ -125,6 +125,10 @@ nav[class*="guilds_"] {
     [class*="folderButton__"] {
         overflow: visible;
     }
+
+    [class*="folderHeader__"] {
+        --guildbar-avatar-size: var(--guildbar-folder-size);
+    }
     
     [class*="folderIcon__"] {
         svg {
@@ -133,8 +137,6 @@ nav[class*="guilds_"] {
         }
         
         background-color: var(--bg-mod-subtle);
-        width: var(--guildbar-folder-size);
-        height: var(--guildbar-folder-size);
     }
 
     [class*="closedFolderIconWrapper__"] {
@@ -179,7 +181,7 @@ nav[class*="guilds_"] {
     }
 
     [id^="folder-items-"] {
-        --guildbar-avatar-size: var(--guildbar-folder-size) !important;
-        --blob-scale: var(--folder-blob-scale) !important;
+        --guildbar-avatar-size: var(--guildbar-folder-size);
+        --blob-scale: var(--folder-blob-scale);
     }
 }
